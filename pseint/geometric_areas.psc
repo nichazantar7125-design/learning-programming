@@ -1,6 +1,6 @@
 Algoritmo geometric_areas
-	// Declare variables or constants
-	constante_PI<-3.1416
+	// Declare constants
+	PI_VALUE<-3.1416
 	
 	// Declare variables
 	Definir lado, baseRec, alturaRec, baseTri, alturaTri, radio Como Real
