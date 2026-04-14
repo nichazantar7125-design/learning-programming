@@ -1,0 +1,47 @@
+Inicio
+    Definir a, b Como Real
+    Definir op Como Entero
+
+    Escribir "CALCULADORA"
+    Escribir "1 Sumar"
+    Escribir "2 Restar"
+    Escribir "3 Multiplicar"
+    Escribir "4 Dividir"
+    Escribir "5 Promedio"
+    Escribir "6 Todo"
+
+    Leer op
+
+    Escribir "Numero 1:"
+    Leer a
+    Escribir "Numero 2:"
+    Leer b
+
+    Si op = 1 Entonces
+        Escribir a + b
+    Sino Si op = 2 Entonces
+        Escribir a - b
+    Sino Si op = 3 Entonces
+        Escribir a * b
+    Sino Si op = 4 Entonces
+        Si b <> 0 Entonces
+            Escribir a / b
+        Sino
+            Escribir "No se puede dividir"
+        FinSi
+    Sino Si op = 5 Entonces
+        Escribir (a + b) / 2
+    Sino Si op = 6 Entonces
+        Escribir a + b
+        Escribir a - b
+        Escribir a * b
+        Si b <> 0 Entonces
+            Escribir a / b
+        Sino
+            Escribir "No se puede dividir"
+        FinSi
+        Escribir (a + b) / 2
+    Sino
+        Escribir "Opcion incorrecta"
+    FinSi
+Fincd
