@@ -7,7 +7,7 @@ def main_menu():
     print("[3], Multiplication")
     print("[4], Division")
     print("[5], Average")
-    print("[6]loat(in, All operations")
+    print("[6], All operations")
 
 # Inputs
 n1 = float(input("Enter first number: "))
