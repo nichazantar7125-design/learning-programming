@@ -19,24 +19,24 @@ if(opt == 1):
     add = n1 + n2
     print(f"Addition is:  {add}")
 
-if(opt == 2):
+elif(opt == 2):
     subs = n1 - n2
     print(f"Substraction is:  {subs}")
 
-if(opt == 3):
+elif(opt == 3):
     mult = n1 * n2
     print(f"Multiplication is:  {mult}")
 
-if(opt == 4):
+elif(opt == 4):
     div = n1 / n2
     print(f"Division is:  {div}")
 
-if(opt == 5):
+elif(opt == 5):
     avg = (n1 + n2) /2
     print(f"Average is:  {avg}")
 
 
-if(opt == 6):
+elif(opt == 6):
     add = n1 + n2
     subs = n1 - n2
     mult = n1 * n2
@@ -47,3 +47,5 @@ if(opt == 6):
     print(f"Multiplication is:  {mult}")
     print(f"Division is:  {div}")
     print(f"Average is:  {avg}")
+else:
+    print(":::Invalid option:::")

@@ -1,3 +1,9 @@
+        import java.util.Scanner;
+
+public class basic_calc_v3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
         double a;
         double b;
         int opcion;
@@ -46,5 +52,6 @@
         } else {
             System.out.println("Opcion incorrecta");
         }
+        sc.close();
     }
 }

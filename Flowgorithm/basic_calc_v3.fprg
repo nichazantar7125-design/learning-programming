@@ -1,47 +1,92 @@
-Inicio
-    Definir a, b Como Real
-    Definir op Como Entero
-
-    Escribir "CALCULADORA"
-    Escribir "1 Sumar"
-    Escribir "2 Restar"
-    Escribir "3 Multiplicar"
-    Escribir "4 Dividir"
-    Escribir "5 Promedio"
-    Escribir "6 Todo"
-
-    Leer op
-
-    Escribir "Numero 1:"
-    Leer a
-    Escribir "Numero 2:"
-    Leer b
-
-    Si op = 1 Entonces
-        Escribir a + b
-    Sino Si op = 2 Entonces
-        Escribir a - b
-    Sino Si op = 3 Entonces
-        Escribir a * b
-    Sino Si op = 4 Entonces
-        Si b <> 0 Entonces
-            Escribir a / b
-        Sino
-            Escribir "No se puede dividir"
-        FinSi
-    Sino Si op = 5 Entonces
-        Escribir (a + b) / 2
-    Sino Si op = 6 Entonces
-        Escribir a + b
-        Escribir a - b
-        Escribir a * b
-        Si b <> 0 Entonces
-            Escribir a / b
-        Sino
-            Escribir "No se puede dividir"
-        FinSi
-        Escribir (a + b) / 2
-    Sino
-        Escribir "Opcion incorrecta"
-    FinSi
-Fincd
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="basic_calc_v3"/>
+        <attribute name="authors" value="nicol"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 10:11:12 p.&#8239;m."/>
+        <attribute name="created" value="bmljb2w7TklDT0xFOzIwMjYtMDQtMTQ7MDk6NDM6MjkgcC7igK9tLjsxMDY2MA=="/>
+        <attribute name="edited" value="bmljb2w7TklDT0xFOzIwMjYtMDQtMTQ7MTA6MTE6MTIgcC7igK9tLjsxOzEwNzQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="op" type="Integer" array="False" size=""/>
+            <output expression="&quot;Calculadora&quot;" newline="True"/>
+            <output expression="&quot;1 Suma&quot;" newline="True"/>
+            <output expression="&quot;2 Resta&quot;" newline="True"/>
+            <output expression="&quot;3 Multiplicacion&quot;" newline="True"/>
+            <output expression="&quot;4 Division&quot;" newline="True"/>
+            <output expression="&quot;5 Promedio&quot;" newline="True"/>
+            <output expression="&quot;6 Todo&quot;" newline="True"/>
+            <input variable="op"/>
+            <output expression="&quot;Numero 1: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Numero 2: &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="op = 1">
+                <then>
+                    <output expression="a+b" newline="True"/>
+                </then>
+                <else>
+                    <if expression="op = 2">
+                        <then>
+                            <output expression="a-b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="op = 3">
+                                <then>
+                                    <output expression="a*b" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="op = 4">
+                                        <then>
+                                            <if expression="b &#8800; 0">
+                                                <then>
+                                                    <output expression="a/b" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;No se puede dividir&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="op = 5">
+                                                <then>
+                                                    <output expression="(a+b)/2" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="op = 6">
+                                                        <then>
+                                                            <output expression="a+b" newline="True"/>
+                                                            <output expression="a-b" newline="True"/>
+                                                            <output expression="a*b" newline="True"/>
+                                                            <if expression="b &#8800; 0">
+                                                                <then>
+                                                                    <output expression="a/b" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;No se puede dividir&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                            <output expression="(a+b)/2" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Opcion incorrecta&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
